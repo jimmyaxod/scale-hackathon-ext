@@ -1,0 +1,14 @@
+version  = "v1alpha"
+name     = "fetchext"
+tag      = "latest"
+language = "go"
+
+signature {
+  organization = "local"
+  name         = "fetchext"
+  tag          = "v1"
+}
+
+function    = "Scale"
+initialize  = ""
+description = ""
