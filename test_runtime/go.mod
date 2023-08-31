@@ -3,6 +3,7 @@ module github.com/jimmyaxod/scale-hackathon-webcam
 go 1.20
 
 replace signature => /home/jimmy/.config/scale/signatures/local_fetchext_v1_ce3a1b826d95bdd04852dbcf6e234bdbb33120d04e8e14e0c4d4d6018497fa97_signature/golang/host
+replace github.com/loopholelabs/scale => /home/jimmy/code/scale/scale
 
 require (
 	github.com/loopholelabs/scale v0.3.20-dev11

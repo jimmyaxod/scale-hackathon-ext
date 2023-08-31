@@ -31,6 +31,7 @@ func main() {
 	s := sig.New()
 	s.Context.Input = "Hello there! "
 	for {
+		fmt.Printf("[host] Calling Run with %s / %d\n", s.Context.Fetchrequest, len(s.Context.Fetchresponse))
 		err = i.Run(context.Background(), s)
 		if err != nil {
 			panic(err)
@@ -39,6 +40,7 @@ func main() {
 		if s.Context.Fetchrequest == "" {
 			break
 		} else {
+			fmt.Printf("[host] Doing fetch to %s...\n", s.Context.Fetchrequest)
 			// Extension logic goes here...
 			resp, err := http.Get(s.Context.Fetchrequest)
 			if err != nil {
